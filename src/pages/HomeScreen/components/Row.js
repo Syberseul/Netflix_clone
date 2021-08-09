@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { select } from "../../../features/movieSlice";
 import axios from "axios";
 
 import "./Row.css";
 
 function Row({ title, fetchURL, isLargeRow = false }) {
   const [movies, setMovies] = useState([]);
+  const dispatch = useDispatch();
 
   const base_url = "https://image.tmdb.org/t/p/original/";
 
@@ -17,7 +20,21 @@ function Row({ title, fetchURL, isLargeRow = false }) {
     fetchData();
   }, [fetchURL]);
 
-  //   console.log(movies);
+  const handleClick = (movie) => {
+    dispatch(
+      select({
+        poster_path: movie.poster_path,
+        original_language: movie.original_language,
+        original_name: movie.original_name,
+        title: movie.title,
+        overview: movie.overview,
+        release_date: movie.release_date,
+        first_air_date: movie.first_air_date,
+        vote_average: movie.vote_average,
+        vote_count: movie.vote_count,
+      })
+    );
+  };
 
   return (
     <div className="row">
@@ -32,6 +49,7 @@ function Row({ title, fetchURL, isLargeRow = false }) {
                 <img
                   className={`row__poster ${isLargeRow && "row__posterLarge"}`}
                   key={movie.id}
+                  onClick={() => handleClick(movie)}
                   src={`${base_url}${
                     isLargeRow ? movie.poster_path : movie.backdrop_path
                   }`}

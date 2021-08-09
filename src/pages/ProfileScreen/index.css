@@ -50,6 +50,35 @@
   padding-bottom: 10px;
 }
 
+.profileScreen__plan {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  margin-bottom: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.profileScreen__plan:hover {
+  background-color: #282c2d;
+}
+
+.profileScreen__subscribe {
+  color: #fff;
+  background-color: #e50914;
+  border: none;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+.profileScreen__unsubscribe {
+  color: #e50914;
+  background-color: #282c2d;
+  border: none;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
 .profileScreen__signOut {
   padding: 10px 20px;
   margin-top: 5%;

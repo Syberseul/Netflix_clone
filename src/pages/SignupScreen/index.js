@@ -14,9 +14,9 @@ function SignupScreen() {
         emailRef.current.value,
         passwordRef.current.value
       )
-      .then((authUser) => {
-        console.log(authUser);
-      })
+      // .then((authUser) => {
+      //   console.log(authUser);
+      // })
       .catch((err) => {
         alert(err.message);
       });
@@ -30,9 +30,9 @@ function SignupScreen() {
         emailRef.current.value,
         passwordRef.current.value
       )
-      .then((authUser) => {
-        console.log(authUser);
-      })
+      // .then((authUser) => {
+      //   console.log(authUser);
+      // })
       .catch((err) => {
         alert(err.message);
       });
