@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { select } from "../../../features/movieSlice";
+import { select } from "../features/movieSlice";
 import axios from "axios";
 
 import "./Row.css";

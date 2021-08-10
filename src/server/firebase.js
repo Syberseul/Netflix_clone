@@ -1,12 +1,13 @@
 import firebase from "firebase";
+import config from "../config";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAItyNNdnmKHowXgxanxMeOU7QENWOkwzg",
-  authDomain: "netflix-clone-yiteng.firebaseapp.com",
-  projectId: "netflix-clone-yiteng",
-  storageBucket: "netflix-clone-yiteng.appspot.com",
-  messagingSenderId: "396588917292",
-  appId: "1:396588917292:web:1bda6b3156d5e5655d2789",
+  apiKey: config.firebase.api_key,
+  authDomain: config.firebase.auth_domain,
+  projectId: config.firebase.project_id,
+  storageBucket: config.firebase.storage_bucket,
+  messagingSenderId: config.firebase.messaging_sender_id,
+  appId: config.firebase.app_id,
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-import config from "../../../config";
+import config from "../config";
 
 import "./Banner.css";
 
@@ -10,7 +10,7 @@ function Banner() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const request = await axios.get(config.fetchNetflixOriginals);
+      const request = await axios.get(config.TMDB.fetchNetflixOriginals);
       setMovie(
         request.data.results[
           Math.floor(Math.random() * request.data.results.length - 1)

@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { unSelect, selectMovie } from "../../../features/movieSlice";
+import { unSelect, selectMovie } from "../features/movieSlice";
 import "./Detail.css";
 
 function Detail() {
