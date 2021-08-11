@@ -1,4 +1,4 @@
-# <p align="center"> <a href="https://netflix-clone-yiteng.web.app/">Netflix Clone </a>(Official page: https://www.netflix.com/au/)</p>
+# <p align="center"> <a href="https://netflix-clone-yiteng.web.app/"> Netflix Clone </a>(Official page: https://www.netflix.com/au/)</p>
 
 ## Table of Contents
 - <a href="#about"> About the Project </a>
