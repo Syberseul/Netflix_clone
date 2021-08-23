@@ -48,7 +48,7 @@ This section is about tips to help you play with this demo on your own device ðŸ
 ### <a id="installation"> Installation: </a>
  1. Clone the repo to your local device `https://github.com/Syberseul/Netflix_clone.git`
  2. Install required dependencies `npm install`
- 3. Create `.env` file at the root of the root of the folter, and enter:
+ 3. Create `.env` file at the root of the folder, and enter config which get previously in `Required Config` section:
  ```
  REACT_APP_TMDB_API_KEY = TMDB_API_KEY goes here
 
