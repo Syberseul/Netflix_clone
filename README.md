@@ -41,7 +41,7 @@ This section is about tips to help you play with this demo on your own device ðŸ
  4. Go to console (top-right corner) and `Add project` to create your project which will host this demo
  5. Get and save <b>Firebase config</b> from project setting (left banner) `SDK setup and configuration` and choose `Config`
  6. Still under <b>Firebase</b> page, go to `extensions` (left banner) and install `Run Subscription Payments with Stripe`
- 7. Go to <a href="">Stripe<a> and login (or create) account
+ 7. Go to <a href="https://stripe.com/">Stripe<a> and login (or create) account
  8. Get and save <b>Publishable key</b> from `API keys` (left banner) under Developers option
  9. Follow the Stripe construction to setup firebase database and make connection between Firebase and Stripe
   
